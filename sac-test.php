@@ -12,7 +12,7 @@
 				$appHost = "localhost";
 			}
 
-			$response = file_get_contents("http://$appHost:5000/api/sac");
+			$response = file_get_contents("http://$appHost:5000/tickets");
 			$this->assertNull(NULL);
 
 		}	
