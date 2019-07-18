@@ -21,7 +21,7 @@
 			curl_close($curl_handle);
 			
 			//$response = file_get_contents("http://$appHost:80/tickets");
-			$this->assertNull(NULL);
+			$this->assertNull($query);
 
 		}	
 	}
