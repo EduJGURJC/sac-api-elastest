@@ -21,8 +21,11 @@
 			curl_close($curl_handle);
 			
 			//$response = file_get_contents("http://$appHost:80/tickets");
-			$this->assertNull($query);
-
+			//$this->assertNull(NULL);
+			$this->assertJsonStringEqualsJsonString(
+        			'{"ticketId":"555555","userName":"teste","userEmail":"teste@gmail.com","userPhone":"9999999","userMessage":"ola","ticketStatus":"1"}',
+				$query
+			);
 		}	
 	}
 
