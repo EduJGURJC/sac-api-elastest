@@ -12,7 +12,7 @@
 				$appHost = "localhost";
 			}
 
-			$response = file_get_contents("http://$appHost:5000/tickets");
+			$response = file_get_contents("http://$appHost:80/tickets");
 			$this->assertNull(NULL);
 
 		}	
