@@ -20,7 +20,7 @@
 // 			$query = curl_exec($curl_handle);
 // 			curl_close($curl_handle);
 			
-			$response = file_get_contents("http://$appHost:80/");
+			$response = file_get_contents("http://$appHost:8080/");
 // 			$this->expectOutputString($query);
 			$this->assertNull(NULL);
 		}	
