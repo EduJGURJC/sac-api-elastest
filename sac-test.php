@@ -21,6 +21,7 @@
 			curl_close($curl_handle);
 			
 // 			$response = file_get_contents("http://$appHost:80/");
+			$this->expectOutputString($query);
 			$this->assertNull(NULL);
 			//fwrite(STDERR, print_r($query, TRUE));
 			//$this->assertJsonStringEqualsJsonString(
