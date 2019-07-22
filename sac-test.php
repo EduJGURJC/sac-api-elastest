@@ -12,15 +12,15 @@
 				$appHost = "localhost";
 			}
 
-			//$curl_handle=curl_init();
-			//curl_setopt($curl_handle, CURLOPT_URL,"http://$appHost:80/tickets");
-			//curl_setopt($curl_handle, CURLOPT_CONNECTTIMEOUT, 2);
-			//curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);
-			//curl_setopt($curl_handle, CURLOPT_USERAGENT, 'Your application name');
-			//$query = curl_exec($curl_handle);
-			//curl_close($curl_handle);
+			$curl_handle=curl_init();
+			curl_setopt($curl_handle, CURLOPT_URL,"http://$appHost:80/");
+			curl_setopt($curl_handle, CURLOPT_CONNECTTIMEOUT, 2);
+			curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($curl_handle, CURLOPT_USERAGENT, 'Your application name');
+			$query = curl_exec($curl_handle);
+			curl_close($curl_handle);
 			
-			$response = file_get_contents("http://$appHost:80/");
+// 			$response = file_get_contents("http://$appHost:80/");
 			$this->assertNull(NULL);
 			//fwrite(STDERR, print_r($query, TRUE));
 			//$this->assertJsonStringEqualsJsonString(
